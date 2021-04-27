@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;
+  padding: 30px;
+  background: #ededed;
+}
+
+.wrapper {
+  max-width: 690px;
+  margin: 0 auto;
+}
+
+.blue {
+  color: #3f7abe;
+}
+
+h1 {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #08a3d9;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #000380;
+  text-align: center;
+}
+
+#balloon-gallery div {
+  background: teal;
+  width: 120px;
+  height: 145px;
+  text-align: center;
+  color: teal;
+  font-size: 40px;
+  border-radius: 80%;
+  animation: balloons 4s ease-in-out infinite;
+  font-family: sans-serif, arial;
+  margin-top: 20px;
+  display: inline-block;
+  /* float: left; */
+  margin-right: 10px;
+}
+
+@keyframes balloons {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(4deg);
+  }
+}
+
+#balloon-gallery div:nth-child(3n) {
+  background: palevioletred;
+  color: palevioletred;
+}
+
+#balloon-gallery div:nth-child(3n-1) {
+  background: #3f7abe;
+  color: #3f7abe;
+}
+
+#balloon-gallery div:nth-child(5n) {
+  background: yellowgreen;
+  color: yellowgreen;
+}
+
+#balloon-gallery div:nth-child(13) {
+  background: yellow;
+  color: yellow;
+}
+
+#balloon-gallery div:nth-child(10n) {
+  background: orange;
+  color: orange;
+}
+
+#balloon-gallery div:nth-child(4n) {
+  clear: right;
+}
+
+#yay-no-balloons {
+  display: none;
+  color: #ff3300;
+  font-size: 100px;
+  text-align: center;
+}
